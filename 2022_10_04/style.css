@@ -1,0 +1,19 @@
+#container{
+    margin: 50px auto; /* 좌우는 자동 정렬 */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* 원 */
+    border: 50px double whitesmoke;
+    background-color: lightblue;
+    color : whitesmoke;
+    text-align: center;
+}
+
+h1{
+    margin-top: 80px;
+}
+
+.accent{
+    font-size: 1.8em; /* 16px의 1.8배 */
+    font-weight:550;
+}

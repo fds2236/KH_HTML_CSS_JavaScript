@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    column-gap: 4px;
+    row-gap: 4px;
+    grid-template-areas: 
+    "로고 타이틀 타이틀 타이틀 햄버거메뉴"
+    "섹션1 섹션1 컨텐츠영역 컨텐츠영역 컨텐츠영역"
+    "섹션2 섹션2 컨텐츠영역 컨텐츠영역 컨텐츠영역"
+    "섹션3 섹션3 컨텐츠영역 컨텐츠영역 컨텐츠영역"
+    "약관및정책 회사정보 회사정보 회사정보 기타";
+}
+
+.grid-item{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#로고{
+    grid-area: 로고;
+    background-color: orange;
+}
+#타이틀{
+    grid-area: 타이틀;
+    background-color: red;
+}
+#햄버거메뉴{
+    grid-area: 햄버거메뉴;
+    background-color: orange;
+}
+#섹션1{
+    grid-area: 섹션1;
+    background-color: lightblue;
+}
+#섹션2{
+    grid-area: 섹션2;
+    background-color: skyblue;
+}
+#섹션3{
+    grid-area: 섹션3;
+    background-color: rgb(122, 171, 219);
+}
+#컨텐츠영역{
+    grid-area: 컨텐츠영역;
+    background-color: rgb(116, 165, 116);
+}
+#약관및정책{
+    grid-area: 약관및정책;
+    background-color: gray;
+}
+#회사정보{
+    grid-area: 회사정보;
+    background-color: #333;
+}
+#기타{
+    grid-area: 기타;
+    background-color: gray;
+}

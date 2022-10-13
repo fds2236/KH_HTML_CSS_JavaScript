@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">    
+		<title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <h1>Welcome!</h1>
+          <label>
+              <input type="text" id="userId" name="userId" placeholder="아이디 입력"><button type="button">확인</button><p>&nbsp;</p>
+            </label>
+            <label>
+                <input type="password" id="userPwd" name="userPwd" placeholder="비밀번호 입력"><button type="button">확인</button><p>&nbsp;</p>
+            </label>
+            <label>
+                <input type="text" id="userEmail" name="userEmail" placeholder="이메일 입력"><button type="button">확인</button><p>&nbsp;</p>
+            </label>
+            <label>
+                <input type="text" id="userPhone" oninput="autoHyphen(this)" name="userPhone" placeholder="전화번호 입력"><button type="button">확인</button><p>&nbsp;</p>
+            </label>
+            <button disabled="disabled">가입요청</button>
+        </form>
+    </div>
+    <script src="./예제.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+        table{
+            border: 2px solid royalblue;
+        }
+        th, td {
+            border: 1px solid royalblue;
+        }
+    </style>
+    <title>테이블(표) 만들기</title>
+</head>
+<body>
+    <!-- table : 표의 시작과 끝을 알려주는 태그입니다. -->
+    <!-- 레이아웃으로 쓰지말고 표시용으로만 사용(레이아웃은 plex로 하기) -->
+    <table>
+        <!-- caption : 표의 제목을 표시합니다. -->
+        <caption>표의 제목</caption>
+        <!-- tr(table row) : 표의 행을 생성합니다 -->
+        <tr>
+            <!-- th(table header) : 테이블의 제목을 표시 -->
+            <th>번호</th>
+            <th>상품</th>
+            <th>수량</th>
+            <th>가격</th>
+            <th>세금</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>5개</td>
+            <td>5,000원</td>
+            <td>포함</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>3개</td>
+            <!-- rowspan 셀 합치기  -->
+            <td rowspan="2">1000원</td>
+            <td>미포함</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>미린다</td>
+            <td>2개</td>
+            <td>포함</td>
+        </tr>
+    
+    
+    
+
+    </table>
+    
+</body>
+</html>

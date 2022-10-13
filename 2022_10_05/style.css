@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+#container{
+    width : 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+input[type = "text"] {
+    width : 370px;
+    height : 30px;
+    padding-left: 30px;
+    float : left;
+}
+
+button{
+    width: 90px;
+    height: 30px;
+    float:right;
+    background-color:  #222;
+    color: whitesmoke;
+    border: none;
+}
+
+hr{
+    clear: both;
+    display: none;
+}
+
+ul{
+    list-style: none;
+    padding-top: 50px;
+}
+li{
+    line-height: 1.6;
+}

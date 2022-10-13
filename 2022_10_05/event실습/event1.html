@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 예제1</title>
+    <style>
+        .buttons{
+            width : 120px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        #button1{background-color: pink;}
+        #button2{background-color: lightblue;}
+        #button3{background-color: lightgoldenrodyellow;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button class="buttons" id="button1">Pink</button>
+        <button class="buttons" id="button2">Blue</button>
+        <button class="buttons" id="button3">Yellow</button>
+    </div>
+
+    <script>
+        const btn1 = document.querySelector("#button1");
+        const clickEvent1 = () => alert("경고!");
+        btn1.addEventListener("click", clickEvent1);
+
+        const btn2 = document.querySelector("#button2");
+        const clickEvent2 = () => alert("경고! 경고!");
+        btn2.addEventListener("click", clickEvent2);
+
+        const btn3 = document.querySelector("#button3");
+        const clickEvent3 = () => alert("경고! 경고! 경고!");
+        btn3.addEventListener("click", clickEvent3);
+    </script>
+</body>
+</html>

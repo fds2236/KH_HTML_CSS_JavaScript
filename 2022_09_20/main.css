@@ -1,0 +1,39 @@
+body {
+    font-family: "맑은 고딕", "Nanum Gothic", sans-serif;
+}
+
+.parent {
+    font-size: 18px;
+    color: royalblue;
+    font-weight: 400;
+    text-align: justify;
+    text-decoration:underline;
+}
+
+.child {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: rgba(0, 0, 255, .1);
+    /* background-image: url("/images/beach.jpg"); */
+    transition: 1s 0.6s;
+}
+
+.child:hover {
+    color: rgba(0, 0, 255, 1);
+}
+
+.child-to-child {
+    font-size: 1.2em;
+    color: #232323;
+}
+
+/* 영문 텍스를 작은 대문자로 변경 */
+.variant {
+    font-variant: small-caps;
+}
+
+/* a태그에는 기본적으로 언더바가 붙어있음 */
+/* => 이 언더바를 없애주고 싶다? */
+a {
+    text-decoration: none;
+}

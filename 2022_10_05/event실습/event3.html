@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #container{
+            position: relative; /* 자식요소에 absolute를 주려면 부모요소에 relative가 있어야 함 */
+            margin : 10px auto;
+            width: 600px;
+        }
+
+        #container>button{
+            position: absolute; /* 자식요소 */
+            top: 400px;
+            right: 470px;
+            
+            width: 120px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: orange;
+            opacity: 0.9;
+            color:white;
+        }
+
+        #contents{
+            display: none; 
+        }
+
+        #close{
+            width: 120px;
+            height: 30px;
+            background-color: darkmagenta;
+            opacity: 0.7;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+    <title>이벤트예제3</title>
+</head>
+
+<body>
+    <div id="container">
+    <img src="./잇지.jpeg"  width = "500px" alt="">
+        <button id="open">상세 설명 보기</button>
+   
+
+    <!-- 일단 이걸 어떻게 숨기지...? 지금 contents부분도 화면에 출력됨! => display : none으로 해결! -->
+    <div id="contents">
+        <h2>그룹 있지</h2>
+        <p>
+            팀명 'ITZY'는 '너희가 원하는 거 전부 있지? 있지!' 라는 뜻을 가지고 있으며, 정식 한글 표기법은 있지이다. 
+            혹 영어명인 'ITZY'로만 들어본 사람들이 한글로는 어떻게 적는지 몰라 '잇지'라고 부르는 경우도 꽤 많이 있는데, 
+            '있지'라고 불러야 한다며 정정해주는 것이 팬덤 잇지에게는 일상이 되었다.
+        </p>
+        <button id="close">상세 설명 닫기</button>
+    </div>
+</div>
+
+<script>
+// 두 가지 이벤트 발생
+// 열기버튼(함수로 클래스 스타일 조작 display => inline으로 바꾸기)
+const btnOpen = document.querySelector("#open"); // 열기버튼 선택
+btnOpen.addEventListener("click", function() {
+    const dtOpen = document.querySelector("#contents");
+    dtOpen.style.display = "inline";
+})
+
+// 닫기버튼
+const btnClose = document.querySelector("#close"); // 닫기 버튼 선택
+btnClose.addEventListener("click", function() {
+    const dtClose = document.querySelector("#contents");
+    dtClose.style.display = "none";
+})
+</script>
+</body>
+</html>

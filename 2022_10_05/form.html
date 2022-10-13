@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form 태그 선택하기</title>
+</head>
+<style>
+</style>
+<body>
+    <form name="frm1">
+        <label>아이디
+            <input type="text" name="id">
+        </label>
+        <br>
+        <label>패스워드
+        <input type="password" name="pw">
+        </label>
+        <br>
+        <br>
+        <textarea name="desc" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    <form name="frm2">
+        <label><input type="checkbox" value="apple">사과</label>
+        <label><input type="checkbox" value="banana">바나나</label>
+        <label><input type="checkbox" value="orange">오렌지</label>
+        <label><input type="checkbox" value="melon">멜론</label>
+    </form>
+
+    <form name="frm3">
+        <label><input type="radio" value="apple">사과</label>
+        <label><input type="radio" value="banana">바나나</label>
+        <label><input type="radio" value="orange">오렌지</label>
+        <label><input type="radio" value="melon">멜론</label>
+    </form>
+
+    <form name="frm4">
+         <select name="opt">
+            <option value="apple">사과</option>
+            <option value="banana">바나나</option>
+            <option value="orange">오렌지</option>
+            <option value="melon">멜론</option>
+         </select>
+    </form>
+
+    <form name="frm5">
+        <input type="file" name="upload">
+    </form>
+
+    <script>
+        // frm1 : form태그에 값 넣기
+        document.frm1.id.value = "곰돌이사육사";
+        document.frm1.pw.value = "sphb8250";
+        document.frm1.desc.value = "안녕하세요 이제 곧 점심시간입니다. 배가 너무 고프네요."
+
+        // frm2 : 체크박스 중 홀수에만 체크하기
+        const checkEls = document.querySelectorAll("[type='checkbox']"); // 속성 선택자
+        for(let i = 0; i < checkEls.length; i++) {
+            if(i % 2 == 0) checkEls[i].checked = true;   // 유사배열
+        }
+        
+        // frm3 : 라디오박스 중 바나나에만 체크하기
+        const radioEls = document.querySelectorAll("[type='radio']"); // 속성 선택자
+        for(let i = 0; i < radioEls.length; i++) {
+            if(radioEls[i].value === "banana"){
+                radioEls[i].checked = true;
+            }
+        }
+
+        // frm4 : 콤보박스 중 멜론으로 선택하기
+        const selEls = document.querySelectorAll("option");
+        for(let i = 0; i < selEls.length; i++) {
+            if(selEls[i].value === "melon") {
+                selEls[i].selected = true;
+            }
+        }
+
+        // frm5 : 파일 업로드
+        const fileEl = document.frm5.upload.files;
+        console.log("Test : " + fileEl);
+    </script>
+</body>
+</html>

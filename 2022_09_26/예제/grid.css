@@ -1,0 +1,37 @@
+
+*{
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    background-color: lightgray;  
+}
+
+.box{
+    margin:5px;
+    /* border: 1px solid grey; */
+    background-color: white;
+    box-shadow: 3px 3px 1px darkgray;
+}
+
+
+h1{ 
+    margin: 15px 5px 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin:10px;
+}
+
+img{
+    margin: 30px 20px 5px;
+    width: 170px;
+    height: 120px;
+}

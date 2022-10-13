@@ -1,0 +1,137 @@
+*{  padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container{
+    padding: 30px;
+    display: grid;
+    width: 250px;
+    height: 400px;
+    background-color: #FAD89E;
+    box-shadow: 2px 2px 4px gray;
+    border-radius: 4px;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(7, 50px);
+    grid-template-areas:
+    "화면 화면 화면 화면"
+    "화면 화면 화면 화면"
+    "AC 플마 퍼센트 나누기"
+    "칠 팔 구 곱하기"
+    "사 오 육 빼기"
+    "일 이 삼 더하기"
+    "영 점 물음표 등호";
+}
+
+
+.grid-item{
+    font-weight: bold;
+    display: flex;
+    color : whitesmoke;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px gray;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-item:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+
+#화면{
+    position: static;
+    justify-content: right;
+    font-size: 37px;
+    grid-area: 화면;
+    background-color: #faab23;
+}
+#AC {
+    grid-area: AC;
+    background-color: cornflowerblue;
+}
+#플마{
+    grid-area: 플마;
+    background-color: cornflowerblue
+
+}
+#퍼센트{
+    grid-area: 퍼센트;
+    background-color: cornflowerblue
+}
+#나누기{
+    grid-area: 나누기;
+    background-color: orange;
+}
+#칠{
+    grid-area: 칠;
+    background-color: #faab23;
+}
+#팔{
+    grid-area: 팔;
+    background-color: #faab23;
+}
+#구{
+    grid-area: 구;
+    background-color: #faab23;
+}
+#곱하기{
+    grid-area: 곱하기;
+    background-color: orange;
+}
+#사{
+    grid-area: 사;
+    background-color: #faab23;
+}
+#오{
+    grid-area: 오;
+    background-color: #faab23;
+}
+#육{
+    grid-area: 육;
+    background-color: #faab23;
+}
+#빼기{
+    grid-area: 빼기;
+    background-color: orange;
+}
+#일{
+    grid-area: 일;
+    background-color: #faab23;
+}
+#이{
+    grid-area: 이;
+    background-color: #faab23;
+}
+#삼{
+    grid-area: 삼;
+    background-color: #faab23;
+}
+#더하기{
+    grid-area: 더하기;
+    background-color: orange;
+}
+#영{
+    grid-area: 영;
+    background-color: #faab23;
+}
+#점{
+    grid-area: 점;
+    background-color: #faab23;
+}
+#물음표{
+    grid-area: 물음표;
+    background-color: #faab23;
+}
+#등호{
+    grid-area: 등호;
+    background-color: orange;
+}

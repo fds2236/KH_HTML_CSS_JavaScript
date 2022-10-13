@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 문제</title>
+    <style>
+    
+
+        table, th, td {
+            font-size: 14px;
+            border: 1px solid #333;
+        }
+
+        th{
+            background-color: lightsalmon;
+            color: white;
+        }
+
+        td{
+            background-color: lightyellow;
+        }
+
+        #button1{
+            position: relative; left: 130px;
+        }
+
+        label{
+            font-size: 14px;
+            display: inline-block;
+            font-weight: bold;
+            text-align: center;
+            width: 60px;
+        }
+
+        textarea{
+            vertical-align: middle;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="insert.no" method="post">
+        <fieldset>
+            <legend>공지사항 작성하기</legend>
+            <p>
+                <label for="title">제목</label>
+                <input type="text" name="title" size="28" placeholder="제목을 입력하시오" required>
+            </p>
+            <p>
+                <label for="content">내용</label>
+                <textarea name="content" id="content" size="28" cols="30" rows="10" placeholder="내용을 입력하시오" required></textarea>
+            </p>
+            <p>
+                <label for="uploadFile">첨부파일</label>
+                    <input type="file" name="uploadFile" id="uploadFile">
+            </p>
+            <button id="button1">작성하기</button>
+        </fieldset>
+    </form>
+    
+    <hr>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th colspan="2" height="30px">제목</th>
+            <th >작성자</th>
+            <th>작성일</th>
+            <th>조회수</th>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td width="400px">공지사항 제목 9</td>
+            <td><button>바로가기</button></td>
+            <td width="100px">user01</td>
+            <td width="100px">2021-03-29</td>
+            <td width="50px">34</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>공지사항 제목 6</td>
+            <td><button>바로가기</button></td>
+            <td>answ445</td>
+            <td>2021-03-12</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>공지사항 제목 3</td>
+            <td><button>바로가기</button></td>
+            <td>testg12</td>
+            <td>2021-03-01</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>공지사항 제목 2</td>
+            <td><button>바로가기</button></td>
+            <td>palwe3</td>
+            <td>2021-01-02</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>공지사항 제목 1</td>
+            <td><button>바로가기</button></td>
+            <td>xml23</td>
+            <td>2020-12-24</td>
+            <td>124</td>
+        </tr>
+        <tr>
+            <th colspan="4">전체공지사항 갯수</th>
+            <th colspan="2">5개</th>
+        </tr>
+    </table>
+</body>
+</html>

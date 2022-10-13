@@ -1,0 +1,45 @@
+
+
+p{  color: white;
+    width: 300px;
+    border: 5px white; /* solid: 실선, dotted: 도트선, dashed: 점선 */
+    padding: 0 0 0 10px;
+    margin: 10px;
+    border-width: 6px 6px 6px 6px;
+    /* 위, 오른쪽, 아래, 왼쪽 */
+    border-style: solid; /* 박스 선도 따로 지정 가능 */
+    /* background-image: url('/images/beach.jpg');  */
+    border-radius:  10px 10px 0 0; /* 곡률설정하기 */
+    box-shadow: 1px 2px 4px 3px grey; /* 수평거리 수직거리 흐림정도 번짐정도 색상 */
+}
+div{
+    width: 80px; /* 원본 크기가 160px; */
+    height: 50px; /* 원본 크기가 120px */
+    background-color: bisque;
+    /* background-image: url('/images/coffee.jpg');  */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* cover: 세로 비율을 유지하면서 화면을 채움 */
+    /* contain : 화면 크기가 이미지보다 작을 경우 가로 세로 비율을 유지하면서 화면을 채움 */
+
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.red-box{
+    background-color: red;
+}
+/* 요소를 좌표 속성에 따라 배치할 수 있음 */
+.green-box{
+    background-color: green;
+    position: relative;
+    top: 100px;
+    left: 100px;
+
+}
+.blue-box{
+    background-color: blue;
+}

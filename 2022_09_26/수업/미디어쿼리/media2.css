@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+    "grid1 grid2 grid2 grid3 grid3"
+    "grid4 grid2 grid2 grid5 grid5"
+    "grid6 grid7 grid8 grid9 grid10";
+    gap:10px;
+    margin: 5px;
+}
+
+.grid-item{
+    color:white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#grid1{
+    grid-area: grid1;
+    background-color: lightblue;
+}
+
+#grid2{
+    grid-area: grid2;
+    background-color: lightskyblue;
+}
+#grid3{
+    grid-area: grid3;
+    background-color: lightblue;
+}
+#grid4{
+    grid-area: grid4;
+    background-color: lightskyblue;
+}
+#grid5
+{
+    grid-area: grid5;
+    background-color: lightblue;
+}
+#grid6
+{
+    grid-area: grid6;
+    background-color: lightskyblue;
+}
+#grid7
+{
+    grid-area: grid7;
+    background-color: lightblue;
+}
+#grid8
+{
+    grid-area: grid8;
+    background-color: lightskyblue;
+}
+#grid9
+{
+    grid-area: grid9;
+    background-color: lightblue;
+}
+#grid10
+{
+    grid-area: grid10;
+    background-color: lightskyblue;
+}
+
+/* and 뒤에 꼭 띄어쓰기...... */
+@media screen and (max-width:500px){
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 100px);
+        grid-template-areas: 
+        "grid1 grid2 grid2"
+        "grid3 grid2 grid2"
+        "grid4 grid5 grid6"
+        "grid7 grid8 grid9"
+        "grid10 grid10 grid10";
+    }
+}

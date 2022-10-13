@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .buttons{
+            width : 120px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        #background{
+            width : 500px;
+            height : 300px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        #button1{background-color: pink;}
+        #button2{background-color: lightblue;}
+        #button3{background-color: lightgoldenrodyellow;}
+    </style>
+    <title>이벤트예제2</title>
+</head>
+<body>
+    <div id="container">
+        <button class="buttons" id="button1">Pink</button>
+        <button class="buttons" id="button2">Blue</button>
+        <button class="buttons" id="button3">Yellow</button>
+    </div>
+
+    <div id="background">
+
+    </div>
+    <script>
+        const btn1 = document.querySelector("#button1");
+        const clickEvent1 = () => background.style.background = "pink";
+        btn1.addEventListener("click", clickEvent1);
+
+        const btn2 = document.querySelector("#button2");
+        const clickEvent2 = () => background.style.background = "lightblue";
+        btn2.addEventListener("click", clickEvent2);
+
+        const btn3 = document.querySelector("#button3");
+        const clickEvent3 = () => background.style.background = "lightgoldenrodyellow";
+        btn3.addEventListener("click", clickEvent3);
+    </script>
+</body>
+</html>

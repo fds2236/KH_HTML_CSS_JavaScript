@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>이벤트</title>
+</head>
+<body>
+    <!-- 마우스이벤트(onclick) : 누르면 이벤트 발생 -->
+    <!-- <button onclick="clickEvent(100)">클릭</button> -->
+
+    <!-- 포커스이벤트 -->
+    <input id="input_box" type="text" onfocus="focusEvent()" onblur="blurEvent()">
+
+    <!--마우스이벤트 -->
+    <button>클릭</button>
+
+    
+    <script>
+        // 1. 인라인 방식(리액트에서 사용 자주X)
+        // onclick에 대한 함수
+        // function clickEvent(num){
+        //     alert("click !!!" + num);
+        // }
+
+        // onfocus와 onblur에 대한 함수
+        // function focusEvent(){
+        //     let inputBox = document.querySelector("#input_box");
+        //     inputBox.style.background = "lightyellow";
+        // }
+        // function blurEvent(){
+        //     let inputBox = document.querySelector("#input_box");
+        //     inputBox.style.background = "lightblue";
+
+        // }
+
+        // 2. 프로퍼티 방식
+        // 함수를 화살표 함수로
+        // const btnEl = document.querySelector("button");
+        // btnEl.onclick = () => alert("화살표 함수로 구현");
+
+        // 3. 이벤트 등록 메서드 방식
+        const btnEl = document.querySelector("button");
+        btnEl.addEventListener("click", function(){ // 왜 함수 이름없지? 1회용이니까 필요없어! 한 번만 쓰고 버릴꺼니까
+            alert("버튼이 눌렸습니다.");
+        });
+        
+        // 3번 이벤트 등록 메서드 방식을 3번방식의 화살표 함수로 바꾸기
+        const btnE1 = document.querySelector("button");
+        const clickEvent = () => alert("화살표 함수로 버튼 클릭");
+        btnEl.addEventListener("click", clickEvent);
+    </script>
+</body>
+</html>

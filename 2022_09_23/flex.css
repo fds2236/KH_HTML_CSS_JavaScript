@@ -1,0 +1,65 @@
+*{
+    width:500px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+/* *이랑 body태그랑 무슨 차이지..? */
+
+div{
+    font-size: 1.6em;
+}
+/*flex는 아이템을 가로로 배치할 때 사용*/
+/* flex-direction: row(기본값, 가로), row-reverse(거꾸로 가로), column(세로), column-reverse(거꾸로 세로)*/
+/* flex-wrap: wrap(줄바꿈), nowrap(줄바꿈안함, 최대한 노력), wrap-reverse(거꾸로시작해서 줄바꿈)*/
+/* flex-shrink */
+/* justify-content:  */
+/* flex-grow:   */
+
+
+.flex-container {
+    width: 100vw;
+    height: calc(100vh - 160px);
+    background-color: bisque;
+    border: 1px solid black;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.flex-item {
+    width: 100px;
+    border:1px solid grey;
+    color:white;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item:nth-child(1) {
+    background-color: orangered;
+}
+
+.flex-item:nth-child(2) {
+    flex-grow: 1;
+}
+
+
+header{
+    height: 80px;
+    background-color: rgba(255, 255, 224, 0.623);
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    height: 80px;
+    background-color: lightblue;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}

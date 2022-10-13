@@ -1,0 +1,40 @@
+#container {
+    display: grid;
+    width: 700px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.box {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    /* display, justify-content, align-items 글자를 가운데 정렬하기 위해 쓴 코드 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    background-color: royalblue;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1/4;
+}
+
+.box2 {
+    background-color: yellowgreen;
+    grid-row: 2/4;
+}
+
+.box3 {
+    background-color: orange;
+    grid-column: 2/4;
+    grid-row:2/3;
+}
+
+.box4{
+    background-color: yellow;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}

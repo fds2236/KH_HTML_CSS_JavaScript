@@ -1,0 +1,23 @@
+/* letter-spacing : 글자 간격을 조정할 때 사용 */
+/* line-height : 텍스트 한 줄 높이를 지정(줄간격) default값은 1.5 */
+p {
+    letter-spacing: 15px;
+    line-height : 1.5;
+}
+/* 텍스트에 그림자 효과 주기 */
+/* none : <가로거리> <세로거리> <번짐 정도> <색상> */
+h1 {
+    font-size: 50px;
+}
+.shadow1 {
+    color: red;
+    text-shadow: 1px 1px 3px black;
+}
+.shadow2 {
+    color: black;
+    text-shadow: 5px 5px 3px #ffa500;
+}
+.shadow3 {
+    color: darkblue;
+    text-shadow: 7px -3px 2px #000;
+}

@@ -1,0 +1,15 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 1fr; /* 열에 대한 크기 */
+    grid-template-rows: 200px 200px 200px; /* 행에 대한 크기 */
+}
+
+.grid-item {
+    color: white;
+    background-color: royalblue;
+}
+
+.grid-item:nth-child(2n) {
+    background-color: orangered;
+}
+
